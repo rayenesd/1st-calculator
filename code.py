@@ -8,9 +8,15 @@ Multiplication = num_1 * num_2
 Division = num_1 / num_2
 if mode == "+":
     print(Addition)
-if mode == "-":
+elif mode == "-":
     print(Subtraction)
-if mode == "x" and "x":
+elif mode == "x" and "x":
     print(Multiplication)
-if mode == "/":
-    print(Division)
+elif mode == "/":
+    if num_2 == 0:
+        print("Error: Cannot divide by zero.")
+    else:
+        print(Division)
+
+else :
+    print("Invalid mode selected.")    
